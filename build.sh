@@ -18,6 +18,6 @@ java --version
 (exec "./gradlew" bootJar --no-daemon)
 
 echo [Main App] creating docker image...
-docker build -t $imageFullName .
+docker build --platform linux/amd64 -t $imageFullName .
 
 echo [Main App FINISHED] image has been built
