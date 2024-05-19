@@ -31,7 +31,7 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: eu-north-1                   # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: ap-southeast-2                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: people           # set this to your Amazon ECR repository name
   ECS_SERVICE: app-people                 # set this to your Amazon ECS service name
   ECS_CLUSTER: course                 # set this to your Amazon ECS cluster name
