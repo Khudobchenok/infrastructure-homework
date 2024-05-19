@@ -68,6 +68,7 @@ jobs:
       run: |
         chmod +x ./build.sh
         chmod +x ./push.sh
+        aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 730335383193.dkr.ecr.ap-southeast-2.amazonaws.com
 
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
