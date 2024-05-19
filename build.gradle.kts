@@ -53,7 +53,6 @@ allprojects {
 
 	tasks.withType<KotlinCompile> {
 		kotlinOptions {
-			freeCompilerArgs = listOf("-Xjsr305=strict")
 			jvmTarget = "17"
 		}
 	}
@@ -84,9 +83,10 @@ allprojects {
 
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_17
-java.targetCompatibility = JavaVersion.VERSION_17
-
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+ 	targetCompatibility = JavaVersion.VERSION_17
+}
 
 dependencies {
 	// spring modules

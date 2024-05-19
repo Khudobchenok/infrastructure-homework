@@ -2,8 +2,10 @@ plugins {
     kotlin("jvm")
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_17
-java.targetCompatibility = JavaVersion.VERSION_17
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
 
 dependencies {
     implementation("javax.inject:javax.inject:1")
