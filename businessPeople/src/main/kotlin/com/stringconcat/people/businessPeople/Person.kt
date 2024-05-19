@@ -16,11 +16,14 @@ data class Person(
         val favoriteQuote: String
 ) {
 
+    companion object {
+        const val DEFAULT_AGE = 40
+    }
+
     fun mature(forDate: LocalDate = LocalDate.now()): Boolean =
-            age(forDate) > 40
+            age(forDate) > DEFAULT_AGE
 
-
-    fun age(forDate: LocalDate = LocalDate.now()): Year =
+    private fun age(forDate: LocalDate = LocalDate.now()): Year =
             Period.between(forDate, birthDate).years
 
     enum class Sex {

@@ -10,13 +10,14 @@ class PersonRespectfullViewModel(
             "${prefixIfNeeded()} ${person.firstName} ${person.secondName}"
 
     private fun prefixIfNeeded() =
-            if (person.age() > 40)
+            if (person.mature()) {
                 when (person.sex) {
                     Person.Sex.MAN -> "Mr"
                     Person.Sex.WOMAN -> "Mrs"
                 }
-            else ""
-
+            } else {
+                ""
+            }
 
     fun avatarUrl() = person.avatartUrl
 
