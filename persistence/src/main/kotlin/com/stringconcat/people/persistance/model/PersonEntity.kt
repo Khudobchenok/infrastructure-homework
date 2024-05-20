@@ -1,16 +1,17 @@
 package com.stringconcat.people.persistance.model
 
 import com.stringconcat.people.businessPeople.Person
+import jakarta.persistence.Entity
+import jakarta.persistence.Id
+import jakarta.persistence.Table
 import java.time.LocalDate
-import java.util.*
-import javax.persistence.Entity
-import javax.persistence.Id
-import javax.persistence.Table
+import java.util.UUID
 
 @Entity
 @Table(name = "person_entity", schema = "people")
 data class PersonEntity(
-        @Id val id: UUID = UUID.randomUUID(),
+        @Id
+        val id: UUID = UUID.randomUUID(),
         val firstName: String,
         val secondName: String,
         val birthDate: LocalDate,

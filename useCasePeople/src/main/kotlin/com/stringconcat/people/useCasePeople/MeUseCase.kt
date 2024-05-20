@@ -2,7 +2,7 @@ package com.stringconcat.people.useCasePeople
 
 import com.stringconcat.people.businessPeople.Person
 import java.time.LocalDate
-import java.util.*
+import java.util.UUID
 import javax.inject.Named
 
 @Named

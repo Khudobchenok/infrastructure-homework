@@ -3,7 +3,7 @@ package com.stringconcat.people.useCasePeople
 import com.stringconcat.people.businessPeople.Person
 import com.stringconcat.people.businessPeople.PersonGenerator
 import java.time.LocalDate
-import java.util.*
+import java.util.Locale
 import javax.inject.Named
 
 @Named
